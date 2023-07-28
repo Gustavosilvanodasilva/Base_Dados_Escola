@@ -1,0 +1,41 @@
+CRIAÇÃO DE TABELAS
+   
+      TABELA_ALUNOS
+create table Alunos
+(
+ID_Aluno int identity(1,1)Primary key,
+Nome_Aluno Varchar(15),
+Sobrenome_Aluno Varchar(20),
+Data_Nascimento Date,
+Status_Aluno varchar(20)
+)
+
+INSERIR INFORMAÇÕES
+insert into Alunos( Nome_Aluno, Sobrenome_Aluno, Data_Nascimento, Status_Aluno)
+Values ( 'Gustavo', 'Silvano', '21/04/2002', 'Matriculado' ),
+       ( 'Luana', 'Marinho', '02/08/1998', 'Matriculado' );
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+     TABELA_PROFESSOR
+create table Professor
+(
+ID_Professor int identity(1,1)Primary key,
+Nome_Professor Varchar(15),
+Sobrenome_Professor Varchar(20),
+Data_Nascimento Date,
+Materia_Professor varchar(20)
+)
+
+INSERIR INFORMAÇÕES
+insert into Professor( Nome_Professor, Sobrenome_Professor, Data_Nascimento, Materia_Professor)
+Values ( 'Julio', 'Souza', '10/02/1978', 'Português' ),
+       ( 'Marina', 'Goncalvez', '30/12/1994', 'Matemática');
+
+
+
+
